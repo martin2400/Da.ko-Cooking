@@ -1,0 +1,267 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: glacialindi;
+    src: url("../fonts/Glacialindifferenceregular.otf");
+}
+@font-face {
+    font-family: alfaslabone;
+    src: url(../fonts/Alfaslabone.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.alfaslabone {
+    font-family: alfaslabone;
+}
+
+.glacialindi {
+    font-family: glacialindi;
+}
+
+a {color: #df0714;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1 {
+    color: #df0714;
+    font-family: alfaslabone;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+h2 {
+    color: #df0714;
+    font-family: alfaslabone;
+    font-weight: normal;
+}
+
+p {
+    font-family: glacialindi;
+}
+
+body {
+    background-color: #ffd2e1;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+header {
+    background-color: #ffb5cd;
+}
+
+
+
+
+.dakologo {
+    font-size: 3rem;
+    color:#df0714 ;
+    font-family: Alfaslabone;
+}
+
+.menuitems {
+    color: #df0714;
+    font-family: alfaslabone;
+}
+
+@media (max-width: 768px) {
+    
+    .dakologo{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.productos-titulo {
+    text-align: center;
+}
+
+#carouselExampleIndicators {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+.tabla-productos {padding: 2rem 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.producto {background-color: #ffb5cd;
+    padding: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+.titulo-recetas {
+    text-align: center;
+}
+
+.recetas {
+    background-color:#ffb5cd ;
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "Cookies Muffins Tortas"
+    ;
+}
+
+.recetas2{
+    background-size: cover;
+    background-position: center center;
+    border: solid;
+    border-color: #ffd2e1;
+    border-radius: 20px;
+}
+
+
+
+.cooki-receta {
+    grid-area: Cookies;
+    background-image: url(../img/cookievaini.jpeg);
+    height: 350px;
+    width: 350px ;
+}
+
+
+.muffin-receta {
+    grid-area: Muffins;
+    background-image: url(../img/muffinlimon.jpeg);
+    height: 350px;
+    width:350px ;
+}
+
+.torta-receta{
+    grid-area: Tortas;
+    background-image: url(../img/torta.jpeg);
+    height: 350px;
+    width:350px ;
+}
+
+.scroll-cookie {
+    scroll-margin-top: 8ex;
+}
+
+.scroll-muffin {
+    scroll-margin-top: 8ex;
+}
+
+.scroll-torta {
+    scroll-margin-top: 8ex;
+}
+
+
+@media (max-width: 1250px) {
+    .recetas {
+        display: flex;
+        justify-content: center;
+        padding: 0.1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cooki-receta {
+        height: 470px;
+        width: 470px;
+    }
+    .muffin-receta {
+        height: 470px;
+        width: 470px;
+    }
+    .torta-receta {
+        height: 470px;
+        width: 470px;
+    }
+}
+
+@media (max-width: 550px) {
+    .recetas {
+        display: flex;
+        justify-content: center;
+        padding: 0.1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cooki-receta {
+        align-content: center;
+    }
+    .cooki-receta{
+        height: 300px;
+        width: 300px;
+    }
+    .muffin-receta {
+        height: 300px;
+        width: 300px;
+    }
+    .torta-receta {
+        height: 300px;
+        width: 300px;
+    }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+footer{
+    color: #df0714;
+    background-color: #ffb5cd;
+    font-family: alfaslabone;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-redes {
+    list-style-type: none;
+    padding: 20px;
+}
+
+
+
+
+.separacionlist {
+    padding-left: 20px;
+}
