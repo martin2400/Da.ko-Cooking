@@ -3,24 +3,20 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: glacialindi;
-    src: url("../fonts/Glacialindifferenceregular.otf");
+    font-family: acumin;
+    src: url("../fonts/Acumin\ Variable\ Concept.ttf");
 }
 @font-face {
-    font-family: alfaslabone;
-    src: url(../fonts/Alfaslabone.ttf);
+    font-family: okinesans;
+    src: url(../fonts/MADEOkineSansPERSONALUSE-Regular.otf);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.alfaslabone {
-    font-family: alfaslabone;
-}
-
-.glacialindi {
-    font-family: glacialindi;
+.acumin {
+    font-family: acumin;
 }
 
 a {color: #df0714;
@@ -31,19 +27,19 @@ a {color: #df0714;
 
 h1 {
     color: #df0714;
-    font-family: alfaslabone;
+    font-family: okinesans;
     font-weight: normal;
     font-size: 35px;
 }
 
 h2 {
     color: #df0714;
-    font-family: alfaslabone;
+    font-family: okinesans;
     font-weight: normal;
 }
 
 p {
-    font-family: glacialindi;
+    font-family: acumin;
 }
 
 body {
@@ -66,17 +62,15 @@ header {
 }
 
 
-
-
 .dakologo {
     font-size: 3rem;
     color:#df0714 ;
-    font-family: Alfaslabone;
+    font-family: okinesans;
 }
 
 .menuitems {
     color: #df0714;
-    font-family: alfaslabone;
+    font-family: okinesans;
 }
 
 @media (max-width: 768px) {
@@ -247,8 +241,7 @@ header {
 footer{
     color: #df0714;
     background-color: #ffb5cd;
-    font-family: alfaslabone;
-    padding: 1rem;
+    font-family: okinesans;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -256,8 +249,6 @@ footer{
 
 .footer-redes {
     list-style-type: none;
-    padding: 20px;
-    color: #df0714;
 }
 
 
