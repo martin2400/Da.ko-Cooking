@@ -1,0 +1,11 @@
+footer{
+    color: $colorPrincipal;
+    background-color: $colorSecundario;
+    font-family: okinesans;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-redes {
+        list-style-type: none;
+    }
+}

@@ -1,0 +1,19 @@
+.productos-titulo {
+    text-align: center;
+}
+
+#carouselExampleIndicators {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+.tabla-productos {padding: 2rem 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.producto {background-color: $colorSecundario;
+    padding: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}

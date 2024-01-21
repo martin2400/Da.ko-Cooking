@@ -1,0 +1,57 @@
+.titulo-recetas {
+    text-align: center;
+}
+
+.recetas {
+    background-color:$colorSecundario ;
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "Cookies Muffins Tortas"
+    ;
+    .cooki-receta {
+        grid-area: Cookies;
+        background-image: url(../img/cookievaini.jpeg);
+        height: 350px;
+        width: 350px ;
+    }
+    .muffin-receta {
+        grid-area: Muffins;
+        background-image: url(../img/muffinlimon.jpeg);
+        height: 350px;
+        width:350px ;
+    }
+    .torta-receta{
+        grid-area: Tortas;
+        background-image: url(../img/torta.jpeg);
+        height: 350px;
+        width:350px ;
+    }
+    .recetas2{
+        background-size: cover;
+        background-position: center center;
+        border: solid;
+        border-color: $colordefondo;
+        border-radius: 20px;
+    }
+}
+
+
+
+.separacionlist {
+    padding-left: 20px;
+}
+
+
+.scroll-cookie {
+    scroll-margin-top: 8ex;
+}
+
+.scroll-muffin {
+    scroll-margin-top: 8ex;
+}
+
+.scroll-torta {
+    scroll-margin-top: 8ex;
+}

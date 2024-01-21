@@ -1,0 +1,47 @@
+@font-face {
+    font-family: acumin;
+    src: url("../fonts/Acumin\ Variable\ Concept.ttf");
+}
+@font-face {
+    font-family: okinesans;
+    src: url(../fonts/MADEOkineSansPERSONALUSE-Regular.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.acumin {
+    font-family: acumin;
+}
+
+a {color: $colorPrincipal;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1 {
+    color: $colorPrincipal;
+    font-family: okinesans;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+h2 {
+    color: $colorPrincipal;
+    font-family: okinesans;
+    font-weight: normal;
+}
+
+p {
+    font-family: acumin;
+}
+
+body {
+    background-color: $colordefondo;
+}
+
+main {
+    padding: 2rem;
+}
