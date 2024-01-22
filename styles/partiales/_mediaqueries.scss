@@ -12,7 +12,7 @@
     .recetas {
         display: flex;
         justify-content: center;
-        padding: 0.1rem;
+        padding: 3rem;
         flex-direction: column;
         align-items: center;
     }
@@ -28,13 +28,17 @@
         height: 470px;
         width: 470px;
     }
+    .brownie-receta {
+        height: 470px;
+        width: 470px;
+    }
 }
 
 @media (max-width: 550px) {
     .recetas {
         display: flex;
         justify-content: center;
-        padding: 0.1rem;
+        padding: 3rem;
         flex-direction: column;
         align-items: center;
     }
@@ -50,6 +54,10 @@
         width: 300px;
     }
     .torta-receta {
+        height: 300px;
+        width: 300px;
+    }
+    .brownie-receta {
         height: 300px;
         width: 300px;
     }

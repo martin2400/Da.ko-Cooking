@@ -21,21 +21,21 @@ html {
 }
 
 a {
-  color: #df0714;
+  color: #c00000;
   font-size: 20px;
   text-decoration: none;
   padding: 10px;
 }
 
 h1 {
-  color: #df0714;
+  color: #c00000;
   font-family: okinesans;
   font-weight: normal;
   font-size: 35px;
 }
 
 h2 {
-  color: #df0714;
+  color: #c00000;
   font-family: okinesans;
   font-weight: normal;
 }
@@ -45,7 +45,7 @@ p {
 }
 
 body {
-  background-color: #ffd2e1;
+  background-color: #fedee3;
 }
 
 main {
@@ -53,21 +53,51 @@ main {
 }
 
 header {
-  background-color: #ffb5cd;
+  background-color: #f28ca8;
 }
 header .dakologo {
   font-size: 3rem;
-  color: #df0714;
+  color: #c00000;
   font-family: okinesans;
+  animation: bounce-top 0.9s both;
 }
 header .menuitems {
-  color: #df0714;
+  color: #c00000;
   font-family: okinesans;
 }
-
-@media (max-width: 768px) {
-  .dakologo {
-    font-size: 2rem;
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
   }
 }
 .productos-titulo {
@@ -86,7 +116,7 @@ header .menuitems {
 }
 
 .producto {
-  background-color: #ffb5cd;
+  background-color: #f28ca8;
   padding: 1.5rem;
   text-align: center;
   justify-content: center;
@@ -96,37 +126,111 @@ header .menuitems {
   text-align: center;
 }
 
+.cards {
+  display: flex;
+  gap: 5rem;
+}
+
 .recetas {
-  background-color: #ffb5cd;
   padding: 3rem 10rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "Cookies Muffins Tortas";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Cookies Muffins Tortas Brownie";
 }
 .recetas .cooki-receta {
   grid-area: Cookies;
-  background-image: url(../img/cookievaini.jpeg);
-  height: 350px;
-  width: 350px;
 }
 .recetas .muffin-receta {
   grid-area: Muffins;
-  background-image: url(../img/muffinlimon.jpeg);
-  height: 350px;
-  width: 350px;
 }
 .recetas .torta-receta {
   grid-area: Tortas;
-  background-image: url(../img/torta.jpeg);
-  height: 350px;
-  width: 350px;
 }
-.recetas .recetas2 {
+.recetas .brownie-receta {
+  grid-area: Brownie;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  overflow: visible;
+  cursor: pointer;
+  position: relative;
+}
+
+.card::before, .content {
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1333333333);
+  transition: transform 300ms, box-shadow 200ms;
+}
+
+.card::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f28ca8;
+  transform: rotateZ(5deg);
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+}
+
+.info {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.price::before {
+  content: "$";
+}
+
+.price {
+  font-weight: bold;
+  color: #ee9933;
+}
+
+.description p {
+  margin-bottom: 10px;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateZ(-5deg);
+}
+
+.content .img {
+  width: 150px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card:hover::before, .card:hover .content {
+  transform: rotateZ(0deg);
+}
+
+.card:active::before, .card:active .content {
+  box-shadow: none;
+}
+
+.recetas2 {
   background-size: cover;
   background-position: center center;
   border: solid;
-  border-color: #ffd2e1;
+  border-color: #fedee3;
   border-radius: 20px;
+}
+
+.recetas3 {
+  gap: 7rem;
 }
 
 .separacionlist {
@@ -145,11 +249,28 @@ header .menuitems {
   scroll-margin-top: 8ex;
 }
 
+footer {
+  color: #c00000;
+  background-color: #f28ca8;
+  font-family: okinesans;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-redes {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .dakologo {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 1250px) {
   .recetas {
     display: flex;
     justify-content: center;
-    padding: 0.1rem;
+    padding: 3rem;
     flex-direction: column;
     align-items: center;
   }
@@ -165,12 +286,16 @@ header .menuitems {
     height: 470px;
     width: 470px;
   }
+  .brownie-receta {
+    height: 470px;
+    width: 470px;
+  }
 }
 @media (max-width: 550px) {
   .recetas {
     display: flex;
     justify-content: center;
-    padding: 0.1rem;
+    padding: 3rem;
     flex-direction: column;
     align-items: center;
   }
@@ -189,15 +314,8 @@ header .menuitems {
     height: 300px;
     width: 300px;
   }
-}
-footer {
-  color: #df0714;
-  background-color: #ffb5cd;
-  font-family: okinesans;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer .footer-redes {
-  list-style-type: none;
+  .brownie-receta {
+    height: 300px;
+    width: 300px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

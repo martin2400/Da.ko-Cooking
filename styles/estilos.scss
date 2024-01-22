@@ -1,29 +1,8 @@
-@import "./partiales/variables";
-@import "./partiales/reset";
-@import "./partiales/footer";
-@import "./partiales/general";
-@import "./partiales/header";
-@import "./partiales/productos";
-@import "./partiales/recetas";
-@import "./partiales/mediaqueries";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "./partiales/variables.scss";
+@import "./partiales/_reset";
+@import "./partiales/_general";
+@import "./partiales/_header";
+@import "./partiales/_productos";
+@import "./partiales/_recetas";
+@import "./partiales/_footer";
+@import "./partiales/_mediaqueries";
