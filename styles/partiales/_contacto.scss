@@ -51,7 +51,6 @@
     padding-right: 5px;   
     margin-bottom: 20px; 
     margin-top: 10px;
-    align-items: center;
     text-transform: uppercase;
     background-color: $colorPrincipal; 
     border-color: $colorSecundario; 
@@ -85,14 +84,13 @@
     color: $colorPrincipal;
   }
   
-  
   h3{
     font-size: 16px; 
     padding-bottom: 30px;
-    color: #0e0e0e;   
+    color: $colorPrincipal;   
   }
   
-  
+
   p{
     font-size: 14px; 
     color: #0e0e0e; 

@@ -109,8 +109,8 @@ header .menuitems {
   text-align: center;
 }
 
-.producto-inicio-titulo {
-  color: #c00000;
+.carousel-control-prev, .carousel-control-next {
+  top: 50%;
 }
 
 #carouselExampleIndicators {
@@ -123,12 +123,14 @@ header .menuitems {
   display: flex;
   gap: 2rem;
 }
-
-.producto {
+.tabla-productos .producto {
   background-color: #f28ca8;
   padding: 1.5rem;
   text-align: center;
   justify-content: center;
+}
+.tabla-productos .producto .producto-inicio-titulo {
+  color: #c00000;
 }
 
 .productos-titulo {
@@ -243,10 +245,6 @@ div h2 {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.price::before {
-  content: "$";
-}
-
 .price {
   font-weight: bold;
   color: #ee9933;
@@ -284,24 +282,19 @@ div h2 {
 .recetas3 {
   gap: 7rem;
 }
-
-.separacionlist {
+.recetas3 .separacionlist {
   padding-left: 20px;
 }
-
-.scroll-cookie {
+.recetas3 .scroll-cookie {
   scroll-margin-top: 8ex;
 }
-
-.scroll-muffin {
+.recetas3 .scroll-muffin {
   scroll-margin-top: 8ex;
 }
-
-.scroll-muffin {
+.recetas3 .scroll-muffin {
   scroll-margin-top: 8ex;
 }
-
-.scroll-torta {
+.recetas3 .scroll-torta {
   scroll-margin-top: 8ex;
 }
 
@@ -365,7 +358,6 @@ button {
   padding-right: 5px;
   margin-bottom: 20px;
   margin-top: 10px;
-  align-items: center;
   text-transform: uppercase;
   background-color: #c00000;
   border-color: #f28ca8;
@@ -398,7 +390,7 @@ h1 {
 h3 {
   font-size: 16px;
   padding-bottom: 30px;
-  color: #0e0e0e;
+  color: #c00000;
 }
 
 p {

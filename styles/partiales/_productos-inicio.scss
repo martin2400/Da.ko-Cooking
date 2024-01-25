@@ -2,8 +2,8 @@
     text-align: center;
 }
 
-.producto-inicio-titulo {
-    color: $colorPrincipal;
+.carousel-control-prev, .carousel-control-next {
+    top: 50%;
 }
 
 #carouselExampleIndicators {
@@ -14,10 +14,13 @@
 .tabla-productos {padding: 2rem 3rem;
     display: flex;
     gap: 2rem;
-}
 
-.producto {background-color: $colorSecundario;
-    padding: 1.5rem;
-    text-align: center;
-    justify-content: center;
+    .producto {background-color: $colorSecundario;
+        padding: 1.5rem;
+        text-align: center;
+        justify-content: center;
+        .producto-inicio-titulo {
+            color: $colorPrincipal;
+        }
+    }
 }
