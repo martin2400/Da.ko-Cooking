@@ -99,13 +99,7 @@
   box-shadow: none;
 }
 
-.recetas2{
-        background-size: cover;
-        background-position: center center;
-        border: solid;
-        border-color: $colordefondo;
-        border-radius: 20px;
-}
+
 
 .recetas3 {
   gap: 7rem;
@@ -119,6 +113,10 @@
 
 .scroll-cookie {
     scroll-margin-top: 8ex;
+}
+
+.scroll-muffin {
+  scroll-margin-top: 8ex;
 }
 
 .scroll-muffin {

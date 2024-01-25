@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Da.ko</title>
+    <meta name="description" content="Despierta tu pasión por la repostería en Da.ko Cooking. En nuestra página de Recetas, encontrarás un rincón virtual donde la creatividad se mezcla con los ingredientes más deliciosos. ">
+    <meta name="keywords" content="Da.ko Cooking, Cookies, Receta de Cookies, Repostería,">
+    <title>Recetas</title>
     <link rel="shortcut icon" href="../img/cookieicon.png" type="">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -15,17 +17,19 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand dakologo" href="../index.html">Da.ko Cooking</a>
+              <a class="navbar-brand dakologo" href="../index.html">
+                <img src="../img/logo-dako.png" alt="" width="200">
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link menuitems" aria-current="page" href="../index.html">Inicio</a>
-                  <a class="nav-link menuitems" href="./preciosycombos.html">Precios y combos</a>
+                  <a class="nav-link menuitems" href="./productos.html">Productos</a>
                   <a class="nav-link menuitems" href="./recetas.html">Recetas</a>
                   <a class="nav-link menuitems" href="./hacetupedido.html">Hace tu pedido</a>
-                  <a class="nav-link menuitems" href="./nosotros.html">Nosotros</a>
+                  <a class="nav-link menuitems" href="./contacto.html">Contacto</a>
                   <a class="nav-link disable" aria-disabled="true"></a>
                 </div>
               </div>
@@ -39,75 +43,51 @@
                 <div class="card cooki-receta">
                   <div class="content">
                     <a href="#cookies-titulo">
-                      <img src="../cookie.png" alt="" height="" width="140">
+                      <img src="../img/cookie-receta.png" alt="" height="" width="140">
                     </a>
                     
                     <div class="description">
                       <p class="title">
                         <strong>Cookie</strong>
-                      </p>
-                      <p class="info">
-                        Solo 12 minutos al horno
-                      </p>
-                      <p class="price">
-                        2.50
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="card muffin-receta">
                   <div class="content">
-                    <a href="#cookies-titulo">
-                      <img src="../tortapng.png" alt="" height="" width="140">
+                    <a href="#brownie-titulo">
+                      <img src="../img/brownie-receta.png" alt="" height="" width="140">
                     </a>
                     
                     <div class="description">
                       <p class="title">
-                        <strong>Cookie</strong>
-                      </p>
-                      <p class="info">
-                        Solo 12 minutos al horno
-                      </p>
-                      <p class="price">
-                        2.50
+                        <strong>Brownie</strong>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="card torta-receta">
                   <div class="content">
-                    <a href="#cookies-titulo">
-                      <img src="../Muffin.png" alt="" height="" width="140">
+                    <a href="#muffin-titulo">
+                      <img src="../img/Muffin-receta.png" alt="" height="" width="140">
                     </a>
                     
                     <div class="description">
                       <p class="title">
-                        <strong>Cookie</strong>
-                      </p>
-                      <p class="info">
-                        Solo 12 minutos al horno
-                      </p>
-                      <p class="price">
-                        2.50
+                        <strong>Muffins</strong>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="card brownie-receta">
                   <div class="content">
-                    <a href="#cookies-titulo">
-                      <img src="../Sin título-1.png" alt="" height="" width="140">
+                    <a href="#torta-titulo">
+                      <img src="../img/torta-receta.png" alt="" height="" width="140">
                     </a>
                     
                     <div class="description">
                       <p class="title">
-                        <strong>Cookie</strong>
-                      </p>
-                      <p class="info">
-                        Solo 12 minutos al horno
-                      </p>
-                      <p class="price">
-                        2.50
+                        <strong>Tortas</strong>
                       </p>
                     </div>
                   </div>
@@ -118,73 +98,102 @@
         <section>
             <div class="recetas3">
                 <h2 id="cookies-titulo" class="scroll-cookie">Cookies</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus qui nulla, velit facere quam molestiae saepe fuga sequi iste aspernatur itaque, fugiat in architecto ut quas soluta facilis mollitia!</p>
+                <p>Si no te gusta lo dulce, mejor te mantienes alejado. Para los golosos, aquí van unas cookies sin dificultad ninguna.</p>
                 <ul class="separacionlist">
-                    <li class="acumin">azucar</li>
-                    <li class="acumin">harina</li>
-                    <li class="acumin">harina de avena</li>
-                    <li class="acumin">chispas de chocolate</li>
-                    <li class="acumin">huevos</li>
+                  <h3>Ingredientes</h3>
+                    <li class="acumin">400 g harina</li>
+                    <li class="acumin">250 g de manteca</li>
+                    <li class="acumin">De 100 a 150 g de azúcar blanco (dependiendo de lo dulces que gusten)</li>
+                    <li class="acumin">De 100 a 125 g de azúcar moreno</li>
+                    <li class="acumin">240 g de chips de chocolate</li>
+                    <li class="acumin">2 huevos</li>
+                    <li class="acumin">5 g de levadura tipo Royal</li>
+                    <li class="acumin">1 cucharadita de sal</li>
                 </ul>
                 <ol class="separacionlist">
-                    <li class="acumin">mezclar todo</li>
-                    <li class="acumin">revolver</li>
-                    <li class="acumin">llevar al horno</li>
-                    <li class="acumin">sacar del horno</li>
+                  <h3>Pasos</h3>
+                    <li class="acumin">Mezclar la mantequilla con los azúcares hasta integrarlos bien.</li>
+                    <li class="acumin">Añadir los huevos uno a uno y mezclar.</li>
+                    <li class="acumin">Incorporar la harina, el impulsor y la sal. Mezclar sin amasar en exceso.</li>
+                    <li class="acumin">Sumar las pepitas de chocolate y repartirlas bien por la masa con las manos.</li>
+                    <li class="acumin">Cubrir con film de cocina y refrigerar durante dos horas para que la masa se asiente.</li>
+                    <li class="acumin">Formar bolas de unos 140 gramos.</li>
+                    <li class="acumin">Colocar las bolas de masa en una bandeja o recipiente que quepa en el congelador y congelar.</li>
+                    <li class="acumin">Calentar el horno a 205 grados. Repartir las cookies en una bandeja de horno dejando espacio entre ellas, y hornear de 8 a 10 minutos o hasta que estén doradas. Enfriar sobre una rejilla.</li>
                 </ol>
             </div>
-        
             <div class="recetas3">
-                <h2 id="muffin-titulo" class="scroll-muffin">Muffins</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus qui nulla, velit facere quam molestiae saepe fuga sequi iste aspernatur itaque, fugiat in architecto ut quas soluta facilis mollitia!</p>
-                <ul class="separacionlist">
-                    <li class="acumin">azucar</li>
-                    <li class="acumin">harina</li>
-                    <li class="acumin">harina de avena</li>
-                    <li class="acumin">chispas de chocolate</li>
-                    <li class="acumin">huevos</li>
-                </ul>
-                <ol class="separacionlist">
-                    <li class="acumin">mezclar todo</li>
-                    <li class="acumin">revolver</li>
-                    <li class="acumin">llevar al horno</li>
-                    <li class="acumin">sacar del horno</li>
-                </ol>
-            </div>
-        
+              <h2 id="brownie-titulo" class="scroll-brownie">Brownie</h2>
+              <p> Con cada bocado, experimentarás la combinación perfecta de suavidad y indulgencia que solo un buen brownie puede ofrecer.</p>
+              <ul class="separacionlist">
+                <h3>Ingredientes</h3>
+                  <li class="acumin">200 gramos de chocolate negro</li>
+                  <li class="acumin">110 gramos de manteca</li>
+                  <li class="acumin">4 huevos</li>
+                  <li class="acumin">120 gramos de azúcar</li>
+                  <li class="acumin">1 cucharada de esencia de vainilla</li>
+                  <li class="acumin">85 gramos de harina</li>
+                  <li class="acumin">bicarbonato</li>
+              </ul>
+              <ol class="separacionlist">
+                <h3>Pasos</h3>
+                  <li class="acumin">Ponemos el chocolate y la mantequilla. Lo metemos al microondas a temperatura media para que se vaya derritiendo. Una vez derretido lo lo mezclamos muy bien.</li>
+                  <li class="acumin">Ponemos los 4 huevos y el azúcar en un bol.</li>
+                  <li class="acumin">Agregamos la harina y la cucharadita de bicarbonato. Mezclamos muy bien.</li>
+                  <li class="acumin">Agregamos el chocolate que hemos derretido junto con la mantequilla y el toque de vainilla. Seguimos mezclando.</li>
+                  <li class="acumin">Agregamos las nueces y las pepitas de chocolate.</li>
+                  <li class="acumin">En un recipiente de horno ponemos un poco de mantequilla y harina para que no se nos pegue el brownie.</li>
+                  <li class="acumin"> Incorporamos la mezcla e introducimos al horno durante 30-35 minutos a 180º.</li>
+              </ol>
+          </div>
+          <div class="recetas3">
+            <h2 id="muffin-titulo" class="scroll-muffin">Muffins</h2>
+            <p>¿Te apetecen unos Muffins? Estos son pequeños y con un ligero sabor a limón muy agradable y están superesponjosos. Se preparan en un momento y de una manera facilísima.</p>
+            <ul class="separacionlist">
+              <h3>Ingredientes</h3>
+                <li class="acumin">300 g de harina de trigo común</li>
+                <li class="acumin">200 g de azúcar</li>
+                <li class="acumin">2 huevos                    </li>
+                <li class="acumin">180 ml de aceite de oliva</li>
+                <li class="acumin">180 ml de leche</li>
+                <li class="acumin">1 limón (ralladura de la piel)</li>
+                <li class="acumin">8 g de polvo de hornear </li>
+                <li class="acumin">Coloca las cápsulas para muffins en el molde. Rellena casa cápsula sin llenar más de las dos terceras partes de cada cápsula</li>
+                <li class="acumin">Hornéalas durante 12 minutos a 220 grados.</li>
+            </ul>
+            <ol class="separacionlist">
+              <h3>Pasos</h3>
+                <li class="acumin">Coloca los huevos en un bol y añade el azúcar, bate con ayuda de unas varillas hasta que la mezcla espume.</li>
+                <li class="acumin">Añade la leche, el aceite, la ralladura de limón y el zumo de limón. Vuelve a mezclar con las varillas e incorpora la harina, junto con la levadura química o polvo de hornear, a través de un colador.</li>
+                <li class="acumin">Mezcla con las varillas hasta que obtengas una masa homogénea.</li>
+                <li class="acumin">Deja que la masa repose una hora en el frigorífico para obtener la famosa montañita.</li>
+                <li class="acumin">Precalienta el horno a 220 grados.</li>
+                <li class="acumin">sacar del horno</li>
+            </ol>
+        </div>
             <div class="recetas3">
                 <h2 id="torta-titulo" class="scroll-torta">Tortas</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus qui nulla, velit facere quam molestiae saepe fuga sequi iste aspernatur itaque, fugiat in architecto ut quas soluta facilis mollitia!</p>
+                <p>Esta torta es mucho más que un postre, es un deleite para los amantes del chocolate, una obra maestra que hará que tus sentidos bailen de felicidad. </p>
                 <ul class="separacionlist">
-                    <li class="acumin">azucar</li>
-                    <li class="acumin">harina</li>
-                    <li class="acumin">harina de avena</li>
-                    <li class="acumin">chispas de chocolate</li>
-                    <li class="acumin">huevos</li>
+                  <h3>Ingredientes</h3>
+                    <li class="acumin">Azúcar mascabo 90 Gramos</li>
+                    <li class="acumin">Chocolate semi amargo 240 Gramos</li>
+                    <li class="acumin">Claras 4 Unidades</li>
+                    <li class="acumin">Yemas 4 Unidades</li>
+                    <li class="acumin">Huevos 2 Unidades</li>
+                    <li class="acumin">Esencia de vainilla 1 cdta</li>
+                    <li class="acumin">Harina 50 Gramos</li>
+                    <li class="acumin">Manteca 180 Gramos</li>
+                    <li class="acumin">Polvo de hornear 1 cdta</li>
+                    <li class="acumin">Polvo de almendras 40 Gramos</li>
                 </ul>
                 <ol class="separacionlist">
-                    <li class="acumin">mezclar todo</li>
-                    <li class="acumin">revolver</li>
-                    <li class="acumin">llevar al horno</li>
-                    <li class="acumin">sacar del horno</li>
-                </ol>
-            </div>
-            <div class="recetas3">
-                <h2 id="torta-titulo" class="scroll-brownie">Brownie</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, repellendus qui nulla, velit facere quam molestiae saepe fuga sequi iste aspernatur itaque, fugiat in architecto ut quas soluta facilis mollitia!</p>
-                <ul class="separacionlist">
-                    <li class="acumin">azucar</li>
-                    <li class="acumin">harina</li>
-                    <li class="acumin">harina de avena</li>
-                    <li class="acumin">chispas de chocolate</li>
-                    <li class="acumin">huevos</li>
-                </ul>
-                <ol class="separacionlist">
-                    <li class="acumin">mezclar todo</li>
-                    <li class="acumin">revolver</li>
-                    <li class="acumin">llevar al horno</li>
-                    <li class="acumin">sacar del horno</li>
-                </ol>
+                  <h3>Pasos</h3>
+                    <li class="acumin">Derretir el chocolate junto a la manteca a baño María.</li>
+                    <li class="acumin">Batir los huevos, yemas, azúcar y el esencia de vainilla y luego verter el chocolate e integrar.</li>
+                    <li class="acumin">Incorporar harina, polvo de hornear y polvo de almendras.</li>
+                    <li class="acumin">Batir las claras a nieve y incorporarlas con movimientos envolventes.</li>
+                    <li class="acumin">Verter en el molde y cocinar por 30 minutos a 160° C.</li>
             </div>
         </section>
         

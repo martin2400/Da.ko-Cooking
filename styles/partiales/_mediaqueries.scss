@@ -5,7 +5,25 @@
     }
 }
 
+@media (max-width: 1250px) {
+    .cards2 {
+        display: flex;
+        justify-content: center;
+        padding: 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
+@media (max-width: 550px) {
+    .cards2 {
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 @media (max-width: 1250px) {
@@ -61,5 +79,63 @@
         height: 300px;
         width: 300px;
     }
+}
+
+@media (max-width: 550px) {
+    .contact_form{  
+        width: 300px; 
+        height: auto;
+        margin: 80px auto;
+        border-radius: 10px;  
+        padding-top: 30px;
+        padding-bottom: 20px;  
+        background-color: $colorSecundario;
+        padding-left: 30px; 
     }
-    
+    input{
+        background-color: $colordefondo; 
+        width: 250px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: $colorSecundario; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+    }
+
+    .texto_mensaje{
+        background-color: $colordefondo; 
+        width: 205px;
+        height: 100px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: $colorSecundario; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+        padding-top: 15px; 
+      }
+    button{
+        height: 45px; 
+        padding-left: 5px;
+        padding-right: 5px;   
+        margin-bottom: 20px; 
+        margin-top: 10px;   
+        text-transform: uppercase;
+        background-color: $colorPrincipal; 
+        border-color: $colorSecundario; 
+        border-style: solid; 
+        border-radius: 10px;  
+        width: 220px;   
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 550px) {
+    .text-pedido {
+        width: 305px;
+    } 
+}  

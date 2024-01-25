@@ -1,19 +1,55 @@
 .productos-titulo {
-    text-align: center;
+    align-items: center;
 }
 
-#carouselExampleIndicators {
-    max-width: 600px;
-    margin: 0 auto;
-  }
 
-.tabla-productos {padding: 2rem 3rem;
-    display: flex;
-    gap: 2rem;
+.cards2 {
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "Cookies Cookies2 Cookies3 Cookies4"
+    "Muffins1 Muffins2 Muffins3 Muffins4"
+    "brownie brownie2 extrachoco cookiecake";
+    .card-cookie1 {
+        grid-area: Cookies;
+    }
+    .card-cookie2 {
+        grid-area: Cookies2;
+    }
+    .card-cookie3 {
+        grid-area: Cookies3;
+    }
+    .card-cookie4 {
+        grid-area: Cookies4;
+    }
+
+    .card-muffin2 {
+        grid-area: Muffins1;
+    }
+    .card-muffin2 {
+        grid-area: Muffins2;
+    }
+    .card-muffin3 {
+        grid-area: Muffins3;
+    }
+    .card-muffin4 {
+        grid-area: Muffins4;
+    }
+    .card-brownie {
+        grid-area: brownie;
+    }
+    .card-torta-choco {
+        grid-area: brownie2;
+    }
+    .card-extra-choco {
+        grid-area: extrachoco;
+    }
+    .card-cookie-cake {
+        grid-area: cookiecake;
+    }
 }
 
-.producto {background-color: $colorSecundario;
-    padding: 1.5rem;
+div h2 {
     text-align: center;
-    justify-content: center;
 }

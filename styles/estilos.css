@@ -40,6 +40,11 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  color: #c00000;
+  font-family: okinesans;
+}
+
 p {
   font-family: acumin;
 }
@@ -104,6 +109,10 @@ header .menuitems {
   text-align: center;
 }
 
+.producto-inicio-titulo {
+  color: #c00000;
+}
+
 #carouselExampleIndicators {
   max-width: 600px;
   margin: 0 auto;
@@ -120,6 +129,57 @@ header .menuitems {
   padding: 1.5rem;
   text-align: center;
   justify-content: center;
+}
+
+.productos-titulo {
+  align-items: center;
+}
+
+.cards2 {
+  padding: 3rem 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Cookies Cookies2 Cookies3 Cookies4" "Muffins1 Muffins2 Muffins3 Muffins4" "brownie brownie2 extrachoco cookiecake";
+}
+.cards2 .card-cookie1 {
+  grid-area: Cookies;
+}
+.cards2 .card-cookie2 {
+  grid-area: Cookies2;
+}
+.cards2 .card-cookie3 {
+  grid-area: Cookies3;
+}
+.cards2 .card-cookie4 {
+  grid-area: Cookies4;
+}
+.cards2 .card-muffin2 {
+  grid-area: Muffins1;
+}
+.cards2 .card-muffin2 {
+  grid-area: Muffins2;
+}
+.cards2 .card-muffin3 {
+  grid-area: Muffins3;
+}
+.cards2 .card-muffin4 {
+  grid-area: Muffins4;
+}
+.cards2 .card-brownie {
+  grid-area: brownie;
+}
+.cards2 .card-torta-choco {
+  grid-area: brownie2;
+}
+.cards2 .card-extra-choco {
+  grid-area: extrachoco;
+}
+.cards2 .card-cookie-cake {
+  grid-area: cookiecake;
+}
+
+div h2 {
+  text-align: center;
 }
 
 .titulo-recetas {
@@ -221,14 +281,6 @@ header .menuitems {
   box-shadow: none;
 }
 
-.recetas2 {
-  background-size: cover;
-  background-position: center center;
-  border: solid;
-  border-color: #fedee3;
-  border-radius: 20px;
-}
-
 .recetas3 {
   gap: 7rem;
 }
@@ -245,8 +297,131 @@ header .menuitems {
   scroll-margin-top: 8ex;
 }
 
+.scroll-muffin {
+  scroll-margin-top: 8ex;
+}
+
 .scroll-torta {
   scroll-margin-top: 8ex;
+}
+
+.text-pedido {
+  width: 705px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.boton-pedido {
+  color: #fedee3;
+}
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f28ca8;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fedee3;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f28ca8;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.texto_mensaje {
+  background-color: #fedee3;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f28ca8;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #c00000;
+  border-color: #f28ca8;
+  border-style: solid;
+  border-radius: 10px;
+  width: 320px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: #c00000;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #c00000;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
 }
 
 footer {
@@ -257,6 +432,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+footer .footer-1 {
+  color: #c00000;
+}
 footer .footer-redes {
   list-style-type: none;
 }
@@ -264,6 +442,24 @@ footer .footer-redes {
 @media (max-width: 768px) {
   .dakologo {
     font-size: 2rem;
+  }
+}
+@media (max-width: 1250px) {
+  .cards2 {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  .cards2 {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 1250px) {
@@ -317,5 +513,61 @@ footer .footer-redes {
   .brownie-receta {
     height: 300px;
     width: 300px;
+  }
+}
+@media (max-width: 550px) {
+  .contact_form {
+    width: 300px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #f28ca8;
+    padding-left: 30px;
+  }
+  input {
+    background-color: #fedee3;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f28ca8;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .texto_mensaje {
+    background-color: #fedee3;
+    width: 205px;
+    height: 100px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f28ca8;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+  button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #c00000;
+    border-color: #f28ca8;
+    border-style: solid;
+    border-radius: 10px;
+    width: 220px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 550px) {
+  .text-pedido {
+    width: 305px;
   }
 }/*# sourceMappingURL=estilos.css.map */
