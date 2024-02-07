@@ -107,8 +107,8 @@
 
     .texto_mensaje{
         background-color: $colordefondo; 
-        width: 205px;
-        height: 100px; 
+        width: 250px;
+        height: 100px;
         border-radius: 5px;  
         border-style: solid; 
         border-width: 1px; 
@@ -118,7 +118,7 @@
         margin-bottom: 20px; 
         padding-top: 15px; 
       }
-    button{
+    .boton-contacto{
         height: 45px; 
         padding-left: 5px;
         padding-right: 5px;   
@@ -129,7 +129,7 @@
         border-color: $colorSecundario; 
         border-style: solid; 
         border-radius: 10px;  
-        width: 220px;   
+        width: 250px;   
         cursor: pointer;
     }
 }

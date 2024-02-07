@@ -1,14 +1,187 @@
-footer{
-    color: $colorPrincipal;
-    background-color: $colorSecundario;
-    font-family: okinesans;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .footer-1 {
-        color: $colorPrincipal;
-    }
-    .footer-redes {
-        list-style-type: none;
-    }
+.footer{
+  background-color: $colorSecundario;
+  padding: 1rem 2rem;
+}
+
+.footer .footer1,
+.footer .footer2,
+.footer .footer3{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .footer1{
+  width: 40%;
+}
+
+/* Footer links */
+
+.footer .footer-links{
+  color:  $colordefondo;
+  font-family: okinesans;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer .footer-company-name{
+  color:  $colorPrincipal;
+  font-family: okinesans;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer .footer2{
+  width: 35%;;
+}
+
+.footer2 i {
+  background-color: $colordefondo;
+  color: $colorPrincipal;
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  margin: 10px 15px;
+  display: inline-block;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+}
+.footer .footer2 p{
+  display: inline-block;
+  color: $colordefondo;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer .footer2 p span{
+  display:block;
+  font-family: okinesans;
+  font-weight: normal;
+  font-size:15px;
+  line-height:2;
+}
+
+.footer .footer-links .link-1:before {
+  content: none;
+}
+
+.mail-footer {
+  color:  $colordefondo;
+  font-size: 15px;
+  text-decoration: none;
+ padding: 0;
+}
+
+/* Footer Right */
+
+.footer .footer3{
+  width: 20%;
+}
+
+.footer .footer-company-about{
+  line-height: 20px;
+  color:  $colordefondo;
+  font-family: okinesans;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: $colordefondo;
+  margin: 0.5rem;
+}
+
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: $colorPrincipal;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+.Btn:hover {
+  width: 170px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer .footer1,
+  .footer .footer2,
+  .footer .footer3{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer .footer2 i{
+    margin-left: 0;
+  }
+
 }
